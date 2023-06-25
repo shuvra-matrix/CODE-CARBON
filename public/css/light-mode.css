@@ -1,0 +1,54 @@
+.code {
+  background-color: #ffffffd9 !important;
+}
+
+.hljs {
+  color: #111111 !important;
+}
+
+.hljs-keyword,
+.hljs-link,
+.hljs-literal,
+.hljs-section,
+.hljs-selector-tag {
+  color: #c200e1 !important;
+}
+
+.hljs-addition,
+.hljs-attribute,
+.hljs-bullet,
+.hljs-name,
+.hljs-symbol,
+.hljs-template-tag,
+.hljs-template-variable,
+.hljs-variable {
+  color: #fd8c39 !important;
+}
+
+.hljs-built_in {
+  color: #ffd27e !important;
+}
+
+.hljs-title {
+  color: #ff3b00 !important;
+}
+
+.hljs-type {
+  color: #e300b1 !important;
+}
+
+.hljs-string {
+  color: #004cff !important;
+}
+
+.hljs-number {
+  color: #590000 !important;
+}
+
+.function_ {
+  color: #ff4d4d !important;
+}
+
+.hljs-literal {
+  color: #ef0000 !important;
+}

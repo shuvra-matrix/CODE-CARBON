@@ -11,9 +11,12 @@
     </button>
   </div>
   <div class="darkmode">
-    <button class="mode-bin" type="submit">
-      <div class="mode-one"></div>
-    </button>
+    <form action="/displaymode" method="post">
+      <input type="hidden" name="theme" value="light-mode" />
+      <button class="mode-bin" type="submit">
+        <div class="mode-one"></div>
+      </button>
+    </form>
   </div>
   <div class="background">
     <button class="bac-btn" type="submit">
