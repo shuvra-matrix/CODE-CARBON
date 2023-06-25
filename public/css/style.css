@@ -138,3 +138,95 @@ pre {
   width: 40px;
   height: 40px;
 }
+
+.option-section {
+  width: 40%;
+  background: #191919;
+  padding: 20px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  color: white;
+  border: 1px solid hsla(0, 0%, 100%, 0.2);
+  margin: 2rem auto;
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.theme-btn {
+  padding: 4px 4px;
+  width: 70px;
+  background-color: transparent;
+  border-radius: 8px;
+  color: white;
+  border: 1px solid hsla(0, 0%, 100%, 0.2);
+  border-radius: 14px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.theam-type {
+  margin-right: 8px;
+  padding: 8px;
+  border-radius: 50%;
+  background: #a770ef; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #fdb99b,
+    #cf8bf3,
+    #a770ef
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #fdb99b, #cf8bf3, #a770ef);
+}
+
+.arrow img {
+  width: 15px;
+}
+
+.mode-bin {
+  position: relative;
+  padding: 3px 1px;
+  width: 50px;
+  height: 26px;
+  background-color: transparent;
+  border-radius: 8px;
+  color: white;
+  border: 1px solid hsla(0, 0%, 100%, 0.2);
+  border-radius: 14px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.mode {
+  position: absolute;
+  padding: 10px;
+  background-color: #1565c0;
+  border-radius: 50%;
+  left: 4px;
+}
+
+.padding {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.pad-btn {
+  background: transparent;
+  padding: 1px;
+  color: rgb(143, 143, 143);
+  border: none;
+}
+
+.exports-btn {
+  border: 1px solid #0a8d0a;
+  background-color: rgb(50 192 14 / 17%);
+  color: #0bbb0b;
+  padding: 6px 11px;
+  border-radius: 2px;
+  font-size: 15px;
+}
