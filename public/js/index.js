@@ -7,6 +7,9 @@ const modeOne = document.querySelector(".mode-one");
 const modeTwo = document.querySelector(".mode-two");
 const themeBtn = document.querySelector(".theme-btn");
 const themeSection = document.querySelector(".theme-section");
+const inputImageInfo = document.querySelector(".input-image-info");
+const exportsBtn = document.querySelector(".exports-btn");
+const codeSection = document.querySelector(".code-section-sub");
 
 function set_cookie(name, value) {
   document.cookie = name + "=" + value + "; Path=/;";
@@ -73,3 +76,15 @@ const inputSectionUp = () => {
 };
 
 themeBtn.addEventListener("click", inputSectionUp);
+
+exportsBtn.addEventListener("click", () => {
+  inputImageInfo.value = codeSection;
+  html2canvas(document.querySelector(".code-section-sub")).then((canvas) => {
+    var anchorTag = document.createElement("a");
+    document.body.appendChild(anchorTag);
+    anchorTag.download = "codeCarbon.jpg";
+    anchorTag.href = canvas.toDataURL("image/jpeg", 1.0);
+    anchorTag.target = "_blank";
+    anchorTag.click();
+  });
+});

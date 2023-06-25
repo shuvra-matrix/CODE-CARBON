@@ -10,4 +10,6 @@ routes.get("/displaymode", publicController.getIndex);
 routes.post("/displaymode", publicController.postDisplaymode);
 routes.get("/background", publicController.getIndex);
 routes.post("/background", publicController.postBackground);
+routes.get("/exports", publicController.getIndex);
+routes.post("/exports", publicController.postExports);
 module.exports = routes;

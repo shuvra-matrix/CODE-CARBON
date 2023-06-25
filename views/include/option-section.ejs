@@ -1,41 +1,49 @@
-<div class="option-section">
-  <div class="theme">
-    <button class="theme-btn" type="button">
-      <div class="theam-type <%= theme %>"></div>
-      <div class="arrow">
-        <img
-          src="/images/up.png"
-          alt="external-up-arrows-those-icons-lineal-those-icons-6"
-        />
-      </div>
-    </button>
-  </div>
-  <div class="darkmode">
-    <form action="/displaymode" method="post">
-      <input type="hidden" name="theme" value="light-mode" />
-      <button class="mode-bin" type="submit">
-        <div class="mode-one"></div>
+<div class="option-section-main">
+  <div class="option-section">
+    <div class="theme">
+      <button class="theme-btn" type="button">
+        <div class="theam-type <%= theme %>"></div>
+        <div class="arrow">
+          <img
+            src="/images/up.png"
+            alt="external-up-arrows-those-icons-lineal-those-icons-6"
+          />
+        </div>
       </button>
-    </form>
+    </div>
+    <div class="darkmode">
+      <form action="/displaymode" method="post">
+        <input type="hidden" name="theme" value="light-mode" />
+        <button class="mode-bin" type="submit">
+          <div class="mode-one"></div>
+        </button>
+      </form>
+    </div>
+    <div class="background">
+      <form action="/background" method="post">
+        <input type="hidden" name="theme" value="transparent" />
+        <button class="bac-btn" type="submit">
+          <div class="mode-two"></div>
+        </button>
+      </form>
+    </div>
+    <div class="padding">
+      <button class="pad-btn">16</button>
+      <button class="pad-btn">32</button>
+      <button class="pad-btn">64</button>
+      <button class="pad-btn">128</button>
+    </div>
+    <div class="exports">
+      <input
+        class="input-image-info"
+        type="hidden"
+        value=""
+        name="codeImageSection"
+      />
+      <button class="exports-btn">Export</button>
+    </div>
+    <!-- theme section -->
+    <%- include("./theme-section.ejs") %>
+    <!-- theme section close-->
   </div>
-  <div class="background">
-    <form action="/background" method="post">
-      <input type="hidden" name="theme" value="transparent" />
-      <button class="bac-btn" type="submit">
-        <div class="mode-two"></div>
-      </button>
-    </form>
-  </div>
-  <div class="padding">
-    <button class="pad-btn">16</button>
-    <button class="pad-btn">32</button>
-    <button class="pad-btn">64</button>
-    <button class="pad-btn">128</button>
-  </div>
-  <div class="exports">
-    <button class="exports-btn">Export</button>
-  </div>
-  <!-- theme section -->
-  <%- include("./theme-section.ejs") %>
-  <!-- theme section close-->
 </div>

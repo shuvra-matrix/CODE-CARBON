@@ -112,3 +112,8 @@ exports.postBackground = (req, res, next) => {
     background: req.session.background,
   });
 };
+
+exports.postExports = (req, res, next) => {
+  const imageSection = req.body.codeImageSection;
+  console.log(imageSection);
+};
