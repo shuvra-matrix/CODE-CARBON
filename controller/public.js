@@ -26,10 +26,17 @@ exports.getIndex = (req, res, next) => {
   } else {
     displayMode = "";
   }
+  let background;
+  if (req.session.background) {
+    background = req.session.background;
+  } else {
+    background = "";
+  }
   res.render("public/index.ejs", {
     code: code,
     theme: theme,
     displayMode: displayMode,
+    background: background,
   });
 };
 
@@ -49,11 +56,18 @@ exports.postCode = (req, res, next) => {
   } else {
     displayMode = "";
   }
+  let background;
+  if (req.session.background) {
+    background = req.session.background;
+  } else {
+    background = "";
+  }
 
   res.render("public/index.ejs", {
     code: code,
     theme: theme,
     displayMode: displayMode,
+    background: background,
   });
 };
 
@@ -70,7 +84,12 @@ exports.postTheme = (req, res, next) => {
   } else {
     displayMode = "";
   }
-
+  let background;
+  if (req.session.background) {
+    background = req.session.background;
+  } else {
+    background = "";
+  }
   const theme = req.body.theme;
   req.session.theme = theme;
 
@@ -78,6 +97,7 @@ exports.postTheme = (req, res, next) => {
     code: code,
     theme: theme,
     displayMode: displayMode,
+    background: background,
   });
 };
 
@@ -104,10 +124,56 @@ exports.postDisplaymode = (req, res, next) => {
   } else {
     theme = "soft-purple";
   }
-  console.log(req.session.displayMode);
+  let background;
+  if (req.session.background) {
+    background = req.session.background;
+  } else {
+    background = "";
+  }
   res.render("public/index.ejs", {
     code: code,
     theme: theme,
     displayMode: req.session.displayMode,
+    background: background,
+  });
+};
+
+exports.postBackground = (req, res, next) => {
+  const background = req.body.theme;
+  console.log(background);
+  if (req.session.background) {
+    console.log("hiiii");
+    if (req.session.background == "transparent") {
+      req.session.background = "";
+    } else {
+      req.session.background = background;
+    }
+  } else {
+    req.session.background = background;
+  }
+
+  if (req.session.code) {
+    code = req.session.code;
+  } else {
+    code = DEFULTCODE;
+  }
+  let theme;
+  if (req.session.theme) {
+    theme = req.session.theme;
+  } else {
+    theme = "soft-purple";
+  }
+  let displayMode;
+  if (req.session.displayMode) {
+    displayMode = req.session.displayMode;
+  } else {
+    displayMode = "";
+  }
+
+  res.render("public/index.ejs", {
+    code: code,
+    theme: theme,
+    displayMode: displayMode,
+    background: req.session.background,
   });
 };

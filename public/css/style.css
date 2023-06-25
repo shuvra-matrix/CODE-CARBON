@@ -415,6 +415,10 @@ pre {
   background: linear-gradient(to right, #fdb99b, #cf8bf3, #a770ef);
 }
 
+#transparent {
+  background: transparent !important;
+}
+
 .theme-section {
   position: absolute;
   background-color: var(--input-background-color);

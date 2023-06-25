@@ -26,6 +26,11 @@ window.addEventListener("load", () => {
     modeBtn.style.borderColor = "hsla(0, 0%, 100%, 0.2)";
     modeOne.style.left = "4px";
   }
+  if (document.cookie.includes("background")) {
+    backBtn.style.backgroundColor = "transparent";
+    backBtn.style.borderColor = "hsla(0, 0%, 100%, 0.2)";
+    modeTwo.style.left = "4px";
+  }
 });
 
 function changeMode() {
@@ -47,10 +52,12 @@ function changeBackground() {
     backBtn.style.backgroundColor = "transparent";
     backBtn.style.borderColor = "hsla(0, 0%, 100%, 0.2)";
     modeTwo.style.left = "4px";
+    set_cookie("background", "transparent");
   } else {
     backBtn.style.backgroundColor = "#1565c0";
     backBtn.style.borderColor = "rgb(202, 202, 202)";
     modeTwo.style.left = "24px";
+    delete_cookie("background");
   }
 }
 
