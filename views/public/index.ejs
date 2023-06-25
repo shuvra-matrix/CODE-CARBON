@@ -4,9 +4,55 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/dark.min.css"
+    />
     <title>Code Carbon</title>
   </head>
   <body>
+    <div class="main-div">
+      <div class="code-section-main">
+        <div class="code-section-sub">
+          <input class="hiddenCode" type="hidden" value="<%= code %>" />
+          <pre><code class="code"></code>
+          <div class="green-circle"></div>
+          <div class="yellow-circle"></div>
+          <div class="red-circle"></div>
+          </pre>
+        </div>
+        <div class="input-section-main">
+          <form action="/" method="post">
+            <textarea class="input-section" name="code" id=""></textarea>
+            <button class="btn" type="submit">
+              <img class="send" src="/images/send.png" alt="sent" />
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="option-section">
+        <div class="theme">
+          <button type="button">
+            <span class="theam-type"></span
+            ><span class="arrow">
+              <svg
+                viewBox="0 0 13 12"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6.5 3.567a.609.609 0 0 0-.443.2L2.44 7.471a.542.542 0 0 0-.162.395.56.56 0 0 0 .562.567.58.58 0 0 0 .41-.172l3.246-3.337 3.257 3.337c.11.105.252.172.41.172a.56.56 0 0 0 .56-.567.542.542 0 0 0-.161-.395L6.938 3.767a.589.589 0 0 0-.438-.2Z"
+                  fill="currentColor"
+                ></path></svg
+            ></span>
+          </button>
+        </div>
+      </div>
+    </div>
     <script src="/js/index.js"></script>
+    <script
+      src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"
+      async
+    ></script>
   </body>
 </html>

@@ -7,5 +7,134 @@
 }
 
 body {
-  background-color: aqua;
+  background: #b92b27; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #1565c0,
+    #b92b27
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #1565c0,
+    #b92b27
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.main-div {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.925);
+  padding-top: 4rem;
+  overflow: scroll;
+}
+
+.code-section-main {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+
+.code-section-sub {
+  background: #a770ef; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #fdb99b,
+    #cf8bf3,
+    #a770ef
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #fdb99b,
+    #cf8bf3,
+    #a770ef
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  padding: 20px 45px;
+  border-radius: 8px;
+}
+
+code {
+  background-color: #0d0d0dda !important;
+  min-width: 100px;
+  min-height: 100px;
+  text-align: left !important;
+  word-wrap: break-word;
+  border-radius: 8px;
+  padding: 38px 23px 20px 23px !important;
+  font-size: 1.1rem !important;
+  border: 1px solid white !important;
+  box-shadow: 1px 1px 17px #000000eb !important;
+  border: 2px solid #6d6d6dbf !important;
+}
+
+pre {
+  position: relative !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  top: 40px;
+}
+
+.green-circle,
+.yellow-circle,
+.red-circle {
+  position: absolute;
+  padding: 7px;
+  border-radius: 50%;
+  opacity: 0.8;
+  box-shadow: 1px 1px 9px #000000eb;
+}
+
+.red-circle {
+  background-color: rgb(247, 43, 43);
+  top: 15px;
+  left: 70px;
+}
+
+.green-circle {
+  background-color: rgb(1, 177, 1);
+  top: 15px;
+  left: 20px;
+}
+
+.yellow-circle {
+  background-color: rgb(228, 228, 67);
+  top: 15px;
+  left: 45px;
+}
+
+.input-section-main {
+  width: 100%;
+  margin-top: 2rem;
+  position: relative;
+}
+
+.input-section {
+  width: 100%;
+  height: 47px;
+  background: #191919;
+  padding: 5px 68px 5px 20px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  color: white;
+}
+
+.input-section:focus {
+  outline: none;
+}
+
+.btn {
+  position: absolute;
+  top: 3px;
+  right: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+.send {
+  width: 40px;
+  height: 40px;
 }
