@@ -5,6 +5,8 @@ const modeBtn = document.querySelector(".mode-bin");
 const backBtn = document.querySelector(".bac-btn");
 const modeOne = document.querySelector(".mode-one");
 const modeTwo = document.querySelector(".mode-two");
+const themeBtn = document.querySelector(".theme-btn");
+const themeSection = document.querySelector(".theme-section");
 window.addEventListener("load", () => {
   code.innerHTML = hiddenCode.value.replaceAll(",", "");
   console.log(code.innerHTML);
@@ -38,3 +40,13 @@ function changeBackground() {
 
 modeBtn.addEventListener("click", changeMode);
 backBtn.addEventListener("click", changeBackground);
+
+const inputSectionUp = () => {
+  if (themeSection.style.display === "inline") {
+    themeSection.style.display = "none";
+  } else {
+    themeSection.style.display = "inline";
+  }
+};
+
+themeBtn.addEventListener("click", inputSectionUp);
