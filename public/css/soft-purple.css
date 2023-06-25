@@ -1,0 +1,48 @@
+/* soft purple */
+
+.hljs-keyword,
+.hljs-link,
+.hljs-literal,
+.hljs-section,
+.hljs-selector-tag {
+  color: #db9ce5 !important;
+}
+
+.hljs-addition,
+.hljs-attribute,
+.hljs-bullet,
+.hljs-name,
+.hljs-symbol,
+.hljs-template-tag,
+.hljs-template-variable,
+.hljs-variable {
+  color: #b34bff !important;
+}
+
+.hljs-built_in {
+  color: #fbc6b1 !important;
+}
+
+.hljs-title {
+  color: #ffc0ad !important;
+}
+
+.hljs-type {
+  color: #ff8fe6 !important;
+}
+
+.hljs-string {
+  color: #cac6fb !important;
+}
+
+.hljs-number {
+  color: #f5ab5b !important;
+}
+
+.function_ {
+  color: #f3769d !important;
+}
+
+.hljs-literal {
+  color: #ff6c6c !important;
+}

@@ -1,0 +1,48 @@
+/* cherry  */
+
+.hljs-keyword,
+.hljs-link,
+.hljs-literal,
+.hljs-section,
+.hljs-selector-tag {
+  color: #ff6060 !important;
+}
+
+.hljs-addition,
+.hljs-attribute,
+.hljs-bullet,
+.hljs-name,
+.hljs-symbol,
+.hljs-template-tag,
+.hljs-template-variable,
+.hljs-variable {
+  color: #fd8c39 !important;
+}
+
+.hljs-built_in {
+  color: #ffd27e !important;
+}
+
+.hljs-title {
+  color: #ff8058 !important;
+}
+
+.hljs-type {
+  color: #f77b91 !important;
+}
+
+.hljs-string {
+  color: #ff9797 !important;
+}
+
+.hljs-number {
+  color: #ffa868 !important;
+}
+
+.function_ {
+  color: #ff4d4d !important;
+}
+
+.hljs-literal {
+  color: #f57777 !important;
+}

@@ -1,0 +1,47 @@
+/* sea bizz */
+.hljs-keyword,
+.hljs-link,
+.hljs-literal,
+.hljs-section,
+.hljs-selector-tag {
+  color: #00f39c !important;
+}
+
+.hljs-addition,
+.hljs-attribute,
+.hljs-bullet,
+.hljs-name,
+.hljs-symbol,
+.hljs-template-tag,
+.hljs-template-variable,
+.hljs-variable {
+  color: #a0ff39 !important;
+}
+
+.hljs-built_in {
+  color: #edf765 !important;
+}
+
+.hljs-title {
+  color: #e5f13b !important;
+}
+
+.hljs-type {
+  color: #bbff7f !important;
+}
+
+.hljs-string {
+  color: #00ffea !important;
+}
+
+.hljs-number {
+  color: #02c7e9 !important;
+}
+
+.function_ {
+  color: #00cefff0 !important;
+}
+
+.hljs-literal {
+  color: #a3fb80 !important;
+}

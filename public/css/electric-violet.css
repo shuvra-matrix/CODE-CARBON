@@ -1,0 +1,47 @@
+/* electric violate */
+.hljs-keyword,
+.hljs-link,
+.hljs-literal,
+.hljs-section,
+.hljs-selector-tag {
+  color: #fcc1ff !important;
+}
+
+.hljs-addition,
+.hljs-attribute,
+.hljs-bullet,
+.hljs-name,
+.hljs-symbol,
+.hljs-template-tag,
+.hljs-template-variable,
+.hljs-variable {
+  color: #ff3977 !important;
+}
+
+.hljs-built_in {
+  color: #bb97ff !important;
+}
+
+.hljs-title {
+  color: #df77ff !important;
+}
+
+.hljs-type {
+  color: #a48cff !important;
+}
+
+.hljs-string {
+  color: #ff84d2 !important;
+}
+
+.hljs-number {
+  color: #ff4792 !important;
+}
+
+.function_ {
+  color: #00cefff0 !important;
+}
+
+.hljs-literal {
+  color: #f57777 !important;
+}

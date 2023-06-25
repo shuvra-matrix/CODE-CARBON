@@ -1,0 +1,48 @@
+/* sunrise */
+
+.hljs-keyword,
+.hljs-link,
+.hljs-literal,
+.hljs-section,
+.hljs-selector-tag {
+  color: #f77947 !important;
+}
+
+.hljs-addition,
+.hljs-attribute,
+.hljs-bullet,
+.hljs-name,
+.hljs-symbol,
+.hljs-template-tag,
+.hljs-template-variable,
+.hljs-variable {
+  color: #f94646 !important;
+}
+
+.hljs-built_in {
+  color: #fffd92 !important;
+}
+
+.hljs-title {
+  color: #ff8e4a !important;
+}
+
+.hljs-type {
+  color: #fff28c !important;
+}
+
+.hljs-string {
+  color: #ffca66 !important;
+}
+
+.hljs-number {
+  color: #ffea47 !important;
+}
+
+.function_ {
+  color: #ffcd57f0 !important;
+}
+
+.hljs-literal {
+  color: #ff5353 !important;
+}

@@ -1,0 +1,48 @@
+/* bloody marry */
+
+.hljs-keyword,
+.hljs-link,
+.hljs-literal,
+.hljs-section,
+.hljs-selector-tag {
+  color: #ff7474 !important;
+}
+
+.hljs-addition,
+.hljs-attribute,
+.hljs-bullet,
+.hljs-name,
+.hljs-symbol,
+.hljs-template-tag,
+.hljs-template-variable,
+.hljs-variable {
+  color: #fd8c39 !important;
+}
+
+.hljs-built_in {
+  color: #f9a962 !important;
+}
+
+.hljs-title {
+  color: #ff754a !important;
+}
+
+.hljs-type {
+  color: #ff5977 !important;
+}
+
+.hljs-string {
+  color: #ffa9a9 !important;
+}
+
+.hljs-number {
+  color: #f5ab5b !important;
+}
+
+.function_ {
+  color: #ff4d4d !important;
+}
+
+.hljs-literal {
+  color: #f57777 !important;
+}

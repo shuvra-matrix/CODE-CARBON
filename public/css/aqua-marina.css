@@ -1,0 +1,47 @@
+/* aquamarina */
+.hljs-keyword,
+.hljs-link,
+.hljs-literal,
+.hljs-section,
+.hljs-selector-tag {
+  color: #65d3ed !important;
+}
+
+.hljs-addition,
+.hljs-attribute,
+.hljs-bullet,
+.hljs-name,
+.hljs-symbol,
+.hljs-template-tag,
+.hljs-template-variable,
+.hljs-variable {
+  color: #a37bff !important;
+}
+
+.hljs-built_in {
+  color: #6e93ff !important;
+}
+
+.hljs-title {
+  color: #b3fbff !important;
+}
+
+.hljs-type {
+  color: #39cff3 !important;
+}
+
+.hljs-string {
+  color: #00ffea !important;
+}
+
+.hljs-number {
+  color: #02c7e9 !important;
+}
+
+.function_ {
+  color: #00cefff0 !important;
+}
+
+.hljs-literal {
+  color: #8d8afd !important;
+}

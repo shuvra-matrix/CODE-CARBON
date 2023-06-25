@@ -1,0 +1,48 @@
+/* mango pulp */
+
+.hljs-keyword,
+.hljs-link,
+.hljs-literal,
+.hljs-section,
+.hljs-selector-tag {
+  color: #ffe275 !important;
+}
+
+.hljs-addition,
+.hljs-attribute,
+.hljs-bullet,
+.hljs-name,
+.hljs-symbol,
+.hljs-template-tag,
+.hljs-template-variable,
+.hljs-variable {
+  color: #53db66 !important;
+}
+
+.hljs-built_in {
+  color: #92ffa1 !important;
+}
+
+.hljs-title {
+  color: #ff8e4a !important;
+}
+
+.hljs-type {
+  color: #adff8c !important;
+}
+
+.hljs-string {
+  color: #ffef6f !important;
+}
+
+.hljs-number {
+  color: #ffea47 !important;
+}
+
+.function_ {
+  color: #ffcd57f0 !important;
+}
+
+.hljs-literal {
+  color: #f57777 !important;
+}

@@ -1,0 +1,47 @@
+/* mojito */
+.hljs-keyword,
+.hljs-link,
+.hljs-literal,
+.hljs-section,
+.hljs-selector-tag {
+  color: #b3ff8d !important;
+}
+
+.hljs-addition,
+.hljs-attribute,
+.hljs-bullet,
+.hljs-name,
+.hljs-symbol,
+.hljs-template-tag,
+.hljs-template-variable,
+.hljs-variable {
+  color: #38f5f7 !important;
+}
+
+.hljs-built_in {
+  color: #62f791 !important;
+}
+
+.hljs-title {
+  color: #4aff94 !important;
+}
+
+.hljs-type {
+  color: #adff8c !important;
+}
+
+.hljs-string {
+  color: #fff78e !important;
+}
+
+.hljs-number {
+  color: #b6ff69 !important;
+}
+
+.function_ {
+  color: #9ef1fff0 !important;
+}
+
+.hljs-literal {
+  color: #f57777 !important;
+}
