@@ -1,5 +1,5 @@
 .code {
-  background-color: #ffffffd9 !important;
+  background-color: #ffffff !important;
 }
 
 .hljs {
@@ -22,11 +22,11 @@
 .hljs-template-tag,
 .hljs-template-variable,
 .hljs-variable {
-  color: #fd8c39 !important;
+  color: #7b0360 !important;
 }
 
 .hljs-built_in {
-  color: #ffd27e !important;
+  color: #28671d !important;
 }
 
 .hljs-title {
@@ -51,4 +51,11 @@
 
 .hljs-literal {
   color: #ef0000 !important;
+}
+
+.hljs-comment,
+.hljs-deletion,
+.hljs-meta,
+.hljs-quote {
+  color: #817a7a !important;
 }

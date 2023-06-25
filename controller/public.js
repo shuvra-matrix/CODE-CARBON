@@ -7,97 +7,68 @@ struct CircleImage: View {
   }
 }`;
 
-exports.getIndex = (req, res, next) => {
-  let code;
-  let theme;
+const codeCheck = (req) => {
   if (req.session.code) {
-    code = req.session.code;
+    return req.session.code;
   } else {
-    code = DEFULTCODE;
+    return DEFULTCODE;
   }
+};
+
+const themeCheck = (req) => {
   if (req.session.theme) {
-    theme = req.session.theme;
+    return req.session.theme;
   } else {
-    theme = "soft-purple";
+    return "soft-purple";
   }
-  let displayMode;
+};
+
+const displayModeCheck = (req) => {
   if (req.session.displayMode) {
-    displayMode = req.session.displayMode;
+    return req.session.displayMode;
   } else {
-    displayMode = "";
+    return "";
   }
-  let background;
+};
+
+const backgroundCheck = (req) => {
   if (req.session.background) {
-    background = req.session.background;
+    return req.session.background;
   } else {
-    background = "";
+    return "";
   }
+};
+
+exports.getIndex = (req, res, next) => {
   res.render("public/index.ejs", {
-    code: code,
-    theme: theme,
-    displayMode: displayMode,
-    background: background,
+    code: codeCheck(req),
+    theme: themeCheck(req),
+    displayMode: displayModeCheck(req),
+    background: backgroundCheck(req),
   });
 };
 
 exports.postCode = (req, res, next) => {
   const code = req.body.code.split("     ");
-  console.log(code);
   req.session.code = code;
-  let theme;
-  if (req.session.theme) {
-    theme = req.session.theme;
-  } else {
-    theme = "soft-purple";
-  }
-  let displayMode;
-  if (req.session.displayMode) {
-    displayMode = req.session.displayMode;
-  } else {
-    displayMode = "";
-  }
-  let background;
-  if (req.session.background) {
-    background = req.session.background;
-  } else {
-    background = "";
-  }
 
   res.render("public/index.ejs", {
     code: code,
-    theme: theme,
-    displayMode: displayMode,
-    background: background,
+    theme: themeCheck(req),
+    displayMode: displayModeCheck(req),
+    background: backgroundCheck(req),
   });
 };
 
 exports.postTheme = (req, res, next) => {
-  let code;
-  if (req.session.code) {
-    code = req.session.code;
-  } else {
-    code = DEFULTCODE;
-  }
-  let displayMode;
-  if (req.session.displayMode) {
-    displayMode = req.session.displayMode;
-  } else {
-    displayMode = "";
-  }
-  let background;
-  if (req.session.background) {
-    background = req.session.background;
-  } else {
-    background = "";
-  }
   const theme = req.body.theme;
   req.session.theme = theme;
 
   res.render("public/index.ejs", {
-    code: code,
+    code: codeCheck(req),
     theme: theme,
-    displayMode: displayMode,
-    background: background,
+    displayMode: displayModeCheck(req),
+    background: backgroundCheck(req),
   });
 };
 
@@ -112,35 +83,17 @@ exports.postDisplaymode = (req, res, next) => {
   } else {
     req.session.displayMode = displayMode;
   }
-  let code;
-  if (req.session.code) {
-    code = req.session.code;
-  } else {
-    code = DEFULTCODE;
-  }
-  let theme;
-  if (req.session.theme) {
-    theme = req.session.theme;
-  } else {
-    theme = "soft-purple";
-  }
-  let background;
-  if (req.session.background) {
-    background = req.session.background;
-  } else {
-    background = "";
-  }
+
   res.render("public/index.ejs", {
-    code: code,
-    theme: theme,
+    code: codeCheck(req),
+    theme: themeCheck(req),
     displayMode: req.session.displayMode,
-    background: background,
+    background: backgroundCheck(req),
   });
 };
 
 exports.postBackground = (req, res, next) => {
   const background = req.body.theme;
-  console.log(background);
   if (req.session.background) {
     console.log("hiiii");
     if (req.session.background == "transparent") {
@@ -152,28 +105,10 @@ exports.postBackground = (req, res, next) => {
     req.session.background = background;
   }
 
-  if (req.session.code) {
-    code = req.session.code;
-  } else {
-    code = DEFULTCODE;
-  }
-  let theme;
-  if (req.session.theme) {
-    theme = req.session.theme;
-  } else {
-    theme = "soft-purple";
-  }
-  let displayMode;
-  if (req.session.displayMode) {
-    displayMode = req.session.displayMode;
-  } else {
-    displayMode = "";
-  }
-
   res.render("public/index.ejs", {
-    code: code,
-    theme: theme,
-    displayMode: displayMode,
+    code: codeCheck(req),
+    theme: themeCheck(req),
+    displayMode: displayModeCheck(req),
     background: req.session.background,
   });
 };
