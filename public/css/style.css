@@ -1,3 +1,13 @@
+:root {
+  --code-background-color: #0d0d0dda;
+  --input-border-color: hsla(0, 0%, 100%, 0.2);
+  --option-font-color: rgb(143, 143, 143);
+  --input-background-color: #191919;
+  --option-name-top-position: -22px;
+  --option-name-left-position: 0px;
+  --option-name-font-size: 13px;
+}
+
 *,
 ::after,
 ::before {
@@ -54,7 +64,7 @@ body {
 }
 
 code {
-  background-color: #0d0d0dda !important;
+  background-color: var(--code-background-color) !important;
   min-width: 100px;
   min-height: 100px;
   text-align: left !important;
@@ -111,7 +121,7 @@ pre {
 .input-section {
   width: 100%;
   height: 47px;
-  background: #191919;
+  background: var(--input-background-color);
   padding: 5px 68px 5px 20px;
   font-size: 1.1rem;
   border-radius: 8px;
@@ -141,17 +151,31 @@ pre {
 
 .option-section {
   width: 40%;
-  background: #191919;
-  padding: 20px;
+  background: var(--input-background-color);
+  padding: 30px 20px 20px 20px;
   font-size: 1.1rem;
   border-radius: 8px;
-  color: white;
-  border: 1px solid hsla(0, 0%, 100%, 0.2);
+  color: var(--option-font-color);
+  border: 1px solid var(--input-border-color);
   margin: 2rem auto;
   display: flex;
   gap: 30px;
   justify-content: space-between;
   align-items: center;
+  overflow: auto;
+}
+
+.theme {
+  position: relative;
+}
+
+.theme::after {
+  content: "Theme";
+  color: var(--option-font-color);
+  position: absolute;
+  top: var(--option-name-top-position);
+  font-size: var(--option-name-font-size);
+  left: var(--option-name-left-position);
 }
 
 .theme-btn {
@@ -160,7 +184,7 @@ pre {
   background-color: transparent;
   border-radius: 8px;
   color: white;
-  border: 1px solid hsla(0, 0%, 100%, 0.2);
+  border: 1px solid var(--input-border-color);
   border-radius: 14px;
   display: flex;
   flex-direction: row;
@@ -186,7 +210,8 @@ pre {
   width: 15px;
 }
 
-.mode-bin {
+.mode-bin,
+.bac-btn {
   position: relative;
   padding: 3px 1px;
   width: 50px;
@@ -194,32 +219,74 @@ pre {
   background-color: transparent;
   border-radius: 8px;
   color: white;
-  border: 1px solid hsla(0, 0%, 100%, 0.2);
+  border: 1px solid rgb(202, 202, 202);
   border-radius: 14px;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  background-color: #1565c0;
+  cursor: pointer;
 }
 
-.mode {
+.darkmode {
+  position: relative;
+  padding: 0px 5px;
+}
+
+.darkmode::after {
+  content: "Dark Mode";
+  color: var(--option-font-color);
+  position: absolute;
+  top: var(--option-name-top-position);
+  font-size: var(--option-name-font-size);
+  left: var(--option-name-left-position);
+}
+
+.mode-one,
+.mode-two {
   position: absolute;
   padding: 10px;
-  background-color: #1565c0;
+  background-color: #d8d8d8;
   border-radius: 50%;
-  left: 4px;
+  left: 24px;
+  top: 2px;
+}
+
+.background {
+  position: relative;
+  padding: 0px 8px;
+}
+
+.background::after {
+  content: "Background";
+  color: var(--option-font-color);
+  position: absolute;
+  top: var(--option-name-top-position);
+  font-size: var(--option-name-font-size);
+  left: var(--option-name-left-position);
 }
 
 .padding {
   display: flex;
   flex-direction: row;
   gap: 10px;
+  position: relative;
+}
+
+.padding::after {
+  content: "Padding";
+  color: var(--option-font-color);
+  position: absolute;
+  top: -27px;
+  font-size: var(--option-name-font-size);
+  left: var(--option-name-left-position);
 }
 
 .pad-btn {
   background: transparent;
   padding: 1px;
-  color: rgb(143, 143, 143);
   border: none;
+  color: var(--option-font-color);
 }
 
 .exports-btn {
