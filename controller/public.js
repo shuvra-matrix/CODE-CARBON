@@ -28,6 +28,7 @@ exports.getIndex = (req, res, next) => {
 
 exports.postCode = (req, res, next) => {
   const code = req.body.code.split("     ");
+  console.log(code);
   req.session.code = code;
   let theme;
   if (req.session.theme) {
