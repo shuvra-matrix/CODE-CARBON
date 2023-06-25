@@ -184,14 +184,6 @@ pre {
   margin-right: 8px;
   padding: 8px;
   border-radius: 50%;
-  background: #a770ef; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #fdb99b,
-    #cf8bf3,
-    #a770ef
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #fdb99b, #cf8bf3, #a770ef);
 }
 
 .arrow img {
