@@ -64,7 +64,18 @@ exports.getIndex = (req, res, next) => {
 };
 
 exports.postCode = (req, res, next) => {
-  const code = req.body.code.split("     ");
+  console.log(req.user);
+  const code = req.body.code;
+  console.log(typeof code);
+  req.user[0]
+    .addCode({ code })
+    .then((result) => {
+      console.log(result);
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+
   req.session.code = code;
 
   res.render("public/index.ejs", {
