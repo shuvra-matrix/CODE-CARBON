@@ -83,7 +83,7 @@ exportsBtn.addEventListener("click", () => {
     var anchorTag = document.createElement("a");
     document.body.appendChild(anchorTag);
     anchorTag.download = "codeCarbon.jpg";
-    anchorTag.href = canvas.toDataURL("image/jpeg", 1.0);
+    anchorTag.href = canvas.toDataURL();
     anchorTag.target = "_blank";
     anchorTag.click();
   });
