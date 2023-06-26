@@ -79,14 +79,16 @@ themeBtn.addEventListener("click", inputSectionUp);
 
 exportsBtn.addEventListener("click", () => {
   inputImageInfo.value = codeSection;
-  html2canvas(document.querySelector(".code-section-sub")).then((canvas) => {
-    var anchorTag = document.createElement("a");
-    document.body.appendChild(anchorTag);
-    anchorTag.download = "codeCarbon.jpg";
-    anchorTag.href = canvas.toDataURL();
-    anchorTag.target = "_blank";
-    anchorTag.click();
-  });
+  html2canvas(document.querySelector(".code-section-sub"), { scale: 2 }).then(
+    (canvas) => {
+      var anchorTag = document.createElement("a");
+      document.body.appendChild(anchorTag);
+      anchorTag.download = "codeCarbon.png";
+      anchorTag.href = canvas.toDataURL("image/png");
+      anchorTag.target = "_blank";
+      anchorTag.click();
+    }
+  );
 });
 
 const padBtn = document.querySelectorAll(".pad-btn");

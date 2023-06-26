@@ -37,13 +37,12 @@ body {
 .main-div {
   width: 100%;
   height: 100vh;
-  background: rgb(0 0 0 / 60%);
-  backdrop-filter: blur(9rem);
+  background: rgb(0 0 0 / 75%);
+  backdrop-filter: blur(10rem);
   -webkit-backdrop-filter: blur(0px);
   padding-top: 4rem;
   overflow: scroll;
   position: relative;
-  padding-bottom: 10rem;
 }
 
 .main-div::-webkit-scrollbar {
@@ -525,10 +524,8 @@ pre {
 
 .logo {
   color: var(--option-font-color);
-  position: fixed;
-  bottom: 10px;
   width: 100%;
-  margin: auto;
+  margin: 12rem auto;
   font-size: 12px;
 }
 
