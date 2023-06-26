@@ -147,6 +147,24 @@ pre {
   box-shadow: 1px 1px 17px black;
 }
 
+.input-section::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.input-section::-webkit-scrollbar-thumb:hover {
+  cursor: grab;
+}
+
+.input-section::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+}
+.input-section::-webkit-scrollbar-thumb {
+  background-color: #0505058f;
+  outline: 2px solid #000000a6;
+  border-radius: 8px;
+}
+
 .input-section:focus {
   outline: none;
 }
