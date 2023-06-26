@@ -3,6 +3,7 @@ const bodyParser = require("body-parser");
 const session = require("express-session");
 const mongoos = require("mongoose");
 const path = require("path");
+const PORT = "3000";
 require("dotenv").config();
 const app = express();
 app.set("view engine", "ejs");
@@ -25,4 +26,6 @@ const publicRoutes = require("./routes/public");
 
 app.use(publicRoutes);
 
-app.listen("3000");
+app.listen(process.env.PORT || PORT, () => {
+  console.log(`listining to the ${PORT}`);
+});

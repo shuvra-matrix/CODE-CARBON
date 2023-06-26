@@ -99,7 +99,6 @@ exports.postDisplaymode = (req, res, next) => {
 exports.postBackground = (req, res, next) => {
   const background = req.body.theme;
   if (req.session.background) {
-    console.log("hiiii");
     if (req.session.background == "transparent") {
       req.session.background = "";
     } else {
