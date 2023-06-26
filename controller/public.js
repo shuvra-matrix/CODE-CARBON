@@ -1,11 +1,15 @@
-const DEFULTCODE = `import SwiftUI
+const DEFULTCODE = `
+#include <iostream>
+using namespace std;
 
-struct CircleImage: View {
-  var body: some View {
-    Image("turtlerock")
-      .clipShape(Circle())
-  }
-}`;
+int main() {
+ char c;
+ cout << "Enter a character: ";
+ cin >> c;
+ cout << "ASCII Value of " << c << " is " << int(c);
+ return 0;
+}
+`;
 
 const codeCheck = (req) => {
   if (req.session.code) {

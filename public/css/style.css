@@ -77,7 +77,7 @@ code {
   font-size: 1.1rem !important;
   border: 1px solid white !important;
   box-shadow: 1px 1px 17px #000000eb !important;
-  border: 2px solid #6d6d6dbf !important;
+  border: 1px solid #6d6d6d61 !important;
   font-size: 15px !important;
   font-weight: 500 !important;
 }
@@ -165,7 +165,7 @@ pre {
   width: 34%;
   position: fixed;
   left: 33%;
-  bottom: 20%;
+  bottom: 15%;
   background: var(--input-background-color);
   padding: 30px 20px 20px 20px;
   font-size: 1.1rem;
@@ -174,10 +174,10 @@ pre {
   border: 1px solid var(--input-border-color);
 
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 32px;
   align-items: center;
-  overflow: auto;
   box-shadow: 1px 1px 17px black;
 }
 
@@ -234,7 +234,7 @@ pre {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background-color: #1565c0;
+  background-color: #c71c54;
   cursor: pointer;
 }
 
@@ -463,8 +463,8 @@ pre {
   border: 1px solid var(--input-border-color);
   padding: 15px 10px;
   overflow: auto;
-  top: -432px;
-  left: -19px;
+  top: -478px;
+  left: 6px;
   display: none;
 }
 
@@ -563,6 +563,9 @@ pre {
     width: 51%;
     left: 2%;
     margin-top: 4rem;
+  }
+  .option-section {
+    position: static;
   }
 }
 

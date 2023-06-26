@@ -43,7 +43,7 @@ function changeMode() {
     modeOne.style.left = "4px";
     set_cookie("lightmode", "on");
   } else {
-    modeBtn.style.backgroundColor = "#1565c0";
+    modeBtn.style.backgroundColor = "#c71c54";
     modeBtn.style.borderColor = "rgb(202, 202, 202)";
     modeOne.style.left = "24px";
     delete_cookie("lightmode");
@@ -57,7 +57,7 @@ function changeBackground() {
     modeTwo.style.left = "4px";
     set_cookie("background", "transparent");
   } else {
-    backBtn.style.backgroundColor = "#1565c0";
+    backBtn.style.backgroundColor = "#c71c54";
     backBtn.style.borderColor = "rgb(202, 202, 202)";
     modeTwo.style.left = "24px";
     delete_cookie("background");
