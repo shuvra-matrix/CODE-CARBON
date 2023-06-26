@@ -170,23 +170,21 @@ pre {
 }
 
 .option-section-main {
-  width: 40%;
-  position: relative;
+  width: 100%;
+
   margin: 2rem auto;
 }
 
 .option-section {
-  width: 34%;
-  position: fixed;
-  left: 33%;
-  bottom: 15%;
+  position: relative;
+  width: 36%;
+  margin: auto;
   background: var(--input-background-color);
   padding: 36px 20px 20px 20px;
   font-size: 1.1rem;
   border-radius: 8px;
   color: var(--option-font-color);
   border: 1px solid var(--input-border-color);
-
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -527,9 +525,8 @@ pre {
 
 .logo {
   color: var(--option-font-color);
-
-  position: absolute;
-  bottom: 15px;
+  position: fixed;
+  bottom: 10px;
   width: 100%;
   margin: auto;
   font-size: 12px;
@@ -555,56 +552,48 @@ pre {
 @media (max-width: 1605px) {
   .option-section {
     width: 37%;
-    left: 31.5%;
   }
 }
 
 @media (max-width: 1480px) {
   .option-section {
     width: 40%;
-    left: 30%;
   }
 }
 
 @media (max-width: 1364px) {
   .option-section {
     width: 47%;
-    left: 26.5%;
   }
 }
 
 @media (max-width: 1178px) {
   .option-section {
     width: 55%;
-    left: 22.5%;
   }
 }
 
 @media (max-width: 1000px) {
   .option-section {
     width: 64%;
-    left: 18%;
   }
 }
 
 @media (max-width: 858px) {
   .option-section {
     width: 75%;
-    left: 12.5%;
   }
 }
 
 @media (max-width: 732px) {
   .option-section {
     width: 84%;
-    left: 8%;
   }
 }
 
 @media (max-width: 684px) {
   .option-section {
     width: 98%;
-    left: 1%;
   }
 }
 

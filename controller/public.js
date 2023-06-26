@@ -66,11 +66,10 @@ exports.getIndex = (req, res, next) => {
 exports.postCode = (req, res, next) => {
   console.log(req.user);
   const code = req.body.code;
-  console.log(typeof code);
   req.user[0]
     .addCode({ code })
     .then((result) => {
-      console.log(result);
+      console.log("Done");
     })
     .catch((err) => {
       console.log(err);
