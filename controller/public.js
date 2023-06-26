@@ -43,12 +43,23 @@ const backgroundCheck = (req) => {
   }
 };
 
+const paddingCheck = (req) => {
+  let padding;
+  if (req.session.padding) {
+    padding = req.session.padding;
+  } else {
+    padding = "30";
+  }
+  return padding;
+};
+
 exports.getIndex = (req, res, next) => {
   res.render("public/index.ejs", {
     code: codeCheck(req),
     theme: themeCheck(req),
     displayMode: displayModeCheck(req),
     background: backgroundCheck(req),
+    padding: paddingCheck(req),
   });
 };
 
@@ -61,6 +72,7 @@ exports.postCode = (req, res, next) => {
     theme: themeCheck(req),
     displayMode: displayModeCheck(req),
     background: backgroundCheck(req),
+    padding: paddingCheck(req),
   });
 };
 
@@ -73,6 +85,7 @@ exports.postTheme = (req, res, next) => {
     theme: theme,
     displayMode: displayModeCheck(req),
     background: backgroundCheck(req),
+    padding: paddingCheck(req),
   });
 };
 
@@ -93,6 +106,7 @@ exports.postDisplaymode = (req, res, next) => {
     theme: themeCheck(req),
     displayMode: req.session.displayMode,
     background: backgroundCheck(req),
+    padding: paddingCheck(req),
   });
 };
 
@@ -113,10 +127,18 @@ exports.postBackground = (req, res, next) => {
     theme: themeCheck(req),
     displayMode: displayModeCheck(req),
     background: req.session.background,
+    padding: paddingCheck(req),
   });
 };
 
-exports.postExports = (req, res, next) => {
-  const imageSection = req.body.codeImageSection;
-  console.log(imageSection);
+exports.postPadding = (req, res, next) => {
+  const padding = req.body.padding;
+  req.session.padding = padding;
+  res.render("public/index.ejs", {
+    code: codeCheck(req),
+    theme: themeCheck(req),
+    background: backgroundCheck(req),
+    displayMode: displayModeCheck(req),
+    padding: padding,
+  });
 };

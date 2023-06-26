@@ -28,10 +28,22 @@
       </form>
     </div>
     <div class="padding">
-      <button class="pad-btn">16</button>
-      <button class="pad-btn">32</button>
-      <button class="pad-btn">64</button>
-      <button class="pad-btn">128</button>
+      <form action="/padding" method="post">
+        <input type="hidden" name="padding" value="30" />
+        <button type="submit" class="pad-btn">30</button>
+      </form>
+      <form action="/padding" method="post">
+        <input type="hidden" name="padding" value="40" />
+        <button type="submit" class="pad-btn">40</button>
+      </form>
+      <form action="/padding" method="post">
+        <input type="hidden" name="padding" value="50" />
+        <button type="submit" class="pad-btn">50</button>
+      </form>
+      <form action="/padding" method="post">
+        <input type="hidden" name="padding" value="60" />
+        <button type="submit" class="pad-btn">60</button>
+      </form>
     </div>
     <div class="exports">
       <input

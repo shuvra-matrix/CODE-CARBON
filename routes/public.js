@@ -11,5 +11,6 @@ routes.post("/displaymode", publicController.postDisplaymode);
 routes.get("/background", publicController.getIndex);
 routes.post("/background", publicController.postBackground);
 routes.get("/exports", publicController.getIndex);
-routes.post("/exports", publicController.postExports);
+routes.get("/padding", publicController.getIndex);
+routes.post("/padding", publicController.postPadding);
 module.exports = routes;

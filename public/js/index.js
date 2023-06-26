@@ -88,3 +88,24 @@ exportsBtn.addEventListener("click", () => {
     anchorTag.click();
   });
 });
+
+const padBtn = document.querySelectorAll(".pad-btn");
+
+padBtn.forEach((p) => {
+  p.addEventListener("click", () => {
+    set_cookie("Padbutton", p.textContent);
+  });
+});
+
+padBtn.forEach((p) => {
+  if (document.cookie.includes("Padbutton")) {
+    let cookieButtonIndex = document.cookie.split(";").indexOf("Padbutton");
+    let cookieButtonNum = document.cookie
+      .split(";")
+      .slice(cookieButtonIndex)[0]
+      .split("=")[1];
+    if (p.textContent == cookieButtonNum) {
+      p.classList.add("btn-padding");
+    }
+  }
+});

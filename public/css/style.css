@@ -5,7 +5,7 @@
   --input-border-color: hsla(0, 0%, 100%, 0.2);
   --option-font-color: rgb(143, 143, 143);
   --input-background-color: #191919;
-  --option-name-top-position: -22px;
+  --option-name-top-position: -29px;
   --option-name-left-position: 0px;
   --option-name-font-size: 13px;
 }
@@ -62,8 +62,20 @@ body {
   margin: auto;
 }
 
-.code-section-sub {
-  padding: 20px 45px;
+.padding30 {
+  padding: 0px 30px;
+}
+
+.padding40 {
+  padding: 10px 40px;
+}
+
+.padding50 {
+  padding: 20px 50px;
+}
+
+.padding60 {
+  padding: 30px 60px;
 }
 
 code {
@@ -102,13 +114,13 @@ pre {
 .red-circle {
   background-color: rgb(241 52 52);
   top: 15px;
-  left: 70px;
+  left: 20px;
 }
 
 .green-circle {
   background-color: rgb(138 229 138);
   top: 15px;
-  left: 20px;
+  left: 70px;
 }
 
 .yellow-circle {
@@ -167,7 +179,7 @@ pre {
   left: 33%;
   bottom: 15%;
   background: var(--input-background-color);
-  padding: 30px 20px 20px 20px;
+  padding: 36px 20px 20px 20px;
   font-size: 1.1rem;
   border-radius: 8px;
   color: var(--option-font-color);
@@ -281,6 +293,8 @@ pre {
   flex-direction: row;
   gap: 10px;
   position: relative;
+  justify-content: center;
+  align-items: center;
 }
 
 .padding::after {
@@ -294,9 +308,11 @@ pre {
 
 .pad-btn {
   background: transparent;
-  padding: 1px;
   border: none;
   color: var(--option-font-color);
+  cursor: pointer;
+  padding-top: 7px;
+  padding-bottom: 7px;
 }
 
 .exports-btn {
@@ -313,6 +329,12 @@ pre {
   border: 1px solid #05a805;
   background-color: rgba(32, 109, 12, 0.288);
   color: #08da08;
+}
+
+.btn-padding {
+  background-color: #000000a1;
+  padding: 7px;
+  border-radius: 5px;
 }
 
 .sea-blizz {
